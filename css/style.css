@@ -960,3 +960,25 @@ nav ul.nav-links li a:hover {
         display: flex;
     }
 }
+
+
+
+
+
+
+
+.logo {
+    text-align: center; /* Centers both image and text */
+}
+
+.logo-img {
+    display: block; /* Makes the image behave as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.logo-text {
+    margin-top: 10px; /* Adds some space between logo and text */
+    font-family: Arial, sans-serif; /* Choose an appropriate font */
+    color: #333; /* Choose an appropriate color */
+    font-size: 24px; /* Adjust size as needed */
+}
