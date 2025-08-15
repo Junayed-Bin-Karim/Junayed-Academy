@@ -795,3 +795,168 @@ header {
         width: 70px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* General 4D button style */
+.hero-btn {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 14px 36px !important;
+    min-width: 180px !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+    border: none !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    color: #fff !important;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25), 0 2px 5px rgba(0,0,0,0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* View Courses button - Blue gradient */
+.view-courses-btn {
+    background: linear-gradient(145deg, #4a6bff, #3a5adf) !important;
+}
+.view-courses-btn:hover {
+    background: linear-gradient(145deg, #3a5adf, #2f49c3) !important;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3), 0 3px 7px rgba(0,0,0,0.25);
+}
+
+/* Register Now button - Green gradient */
+.register-btn {
+    background: linear-gradient(145deg, #48bb78, #2f855a) !important;
+}
+.register-btn:hover {
+    background: linear-gradient(145deg, #2f855a, #276749) !important;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3), 0 3px 7px rgba(0,0,0,0.25);
+}
+
+/* Active state for both */
+.hero-btn:active {
+    transform: translateY(2px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.15);
+}
+
+/* Mobile view: stack buttons and resize */
+@media (max-width: 768px) {
+    .hero-btn {
+        width: 70% !important;       /* make buttons narrower */
+        padding: 12px 24px !important;
+        font-size: 14px !important;
+        display: block !important;   /* stack vertically */
+        margin: 10px auto !important; /* center horizontally */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header container */
+header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1); /* subtle shadow */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Inner container */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6px 20px; /* reduced padding for smaller height */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-img {
+    height: 30px; /* smaller logo */
+    width: auto;
+}
+
+.logo-text {
+    font-size: 16px; /* smaller text */
+    font-weight: 600;
+    color: #333;
+}
+
+/* Navigation links */
+nav ul.nav-links {
+    display: flex;
+    gap: 15px; /* smaller gap between links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.nav-links li a {
+    font-size: 14px; /* smaller font */
+    padding: 4px 8px; /* reduced padding */
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+nav ul.nav-links li a:hover {
+    color: #4a6bff;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsive mobile menu */
+@media (max-width: 768px) {
+    nav ul.nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 45px; /* below header */
+        right: 20px;
+        width: 180px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        padding: 10px;
+        border-radius: 6px;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    nav ul.nav-links.active {
+        display: flex;
+    }
+}
