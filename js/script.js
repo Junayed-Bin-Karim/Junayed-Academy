@@ -52,16 +52,3 @@ btn.addEventListener('click', () => {
         btn.style.transform = 'scale(1)';
     }, 150);
 });
-
-
-const hero = document.querySelector('.hero');
-const layer1 = hero.querySelector('.layer1');
-const layer2 = hero.querySelector('.layer2');
-
-document.addEventListener('mousemove', (e) => {
-    const x = (e.clientX - window.innerWidth / 2) * 0.02;
-    const y = (e.clientY - window.innerHeight / 2) * 0.02;
-
-    layer1.style.transform = `translate3d(${x}px, ${y}px, 0) scale(1.1)`;
-    layer2.style.transform = `translate3d(${x*0.5}px, ${y*0.5}px, 0) scale(1.05)`;
-});
