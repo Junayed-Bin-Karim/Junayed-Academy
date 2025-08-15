@@ -982,3 +982,43 @@ nav ul.nav-links li a:hover {
     color: #333; /* Choose an appropriate color */
     font-size: 24px; /* Adjust size as needed */
 }
+
+
+
+
+
+
+
+/* Hero Section - Fullscreen on Mobile */
+.hero {
+    height: 100vh;       /* viewport height: full screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically centered */
+    align-items: center;     /* horizontally centered */
+    text-align: center;
+    padding: 0 20px;         /* responsive padding */
+    margin-top: 60px;        /* adjust if header overlaps */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh;       /* full screen on mobile */
+        padding: 0 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;   /* smaller heading */
+    }
+
+    .hero p {
+        font-size: 1rem;     /* smaller paragraph */
+    }
+
+    .hero-btns {
+        flex-direction: column; /* stack buttons vertically */
+        gap: 12px;
+    }
+}
+
