@@ -4,173 +4,405 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junayed Academy - Learn AI, ML & Web Development</title>
+    <meta name="description" content="Professional courses in AI, Machine Learning, and Web Development taught by industry expert Junayed Bin Karim">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-<header>
-    <div class="container">
-        <div class="logo">
-           
-            <!-- Logo Image -->
-            <img src="images/logo.png" alt="Junayed Academy Logo" class="logo-img">
-        </div>
-        <nav>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
+    <!-- Header with improved navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#home" class="logo">
+                    <img src="images/logo.png" alt="Junayed Academy Logo" class="logo-img">
+                </a>
+                
+                <nav class="navigation">
+                    <ul class="nav-links">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#courses" class="nav-link">Courses</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <div class="mobile-menu-btn">
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#courses" class="mobile-nav-link">Courses</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
             </ul>
-        </nav>
-    </div>
-</header>
+        </div>
+    </header>
 
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container">
-        <h1>Learn AI, ML, and Web Development with Junayed Bin Karim</h1>
-        <p>Transform your career with hands-on, project-based courses taught by an industry expert</p>
-
-
-<!-- Buttons in Hero Section -->
-<div class="hero-btns">
-    <a href="#courses" class="hero-btn view-courses-btn">View Courses</a>
-    <a href="https://forms.gle/VU57qEDW3N5JzGwi6" target="_blank" class="hero-btn register-btn">Register Now</a>
-</div>
-
-      
-    </div>
-</section>
-
-
+    <!-- Hero Section with improved layout -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Master AI, ML & Web Development</h1>
+                <p class="hero-subtitle">Transform your career with hands-on, project-based courses taught by industry expert Junayed Bin Karim</p>
+                
+                <div class="hero-cta">
+                    <a href="#courses" class="btn btn-primary">
+                        <span>Explore Courses</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://forms.gle/VU57qEDW3N5JzGwi6" target="_blank" class="btn btn-secondary">
+                        <span>Register Now</span>
+                        <i class="fas fa-user-plus"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="images/me.JPG" alt="Learning illustration" class="hero-img">
+            </div>
         </div>
     </section>
 
-    <!-- Courses Section -->
+    <!-- Courses Section with improved card design -->
     <section id="courses" class="courses">
         <div class="container">
-            <h2>Featured Courses</h2>
+            <div class="section-header">
+                <h2 class="section-title">Featured Courses</h2>
+                <p class="section-subtitle">Comprehensive programs designed to get you job-ready</p>
+            </div>
+            
             <div class="course-grid">
                 <!-- Course 1 -->
                 <div class="course-card">
-                    <img src="images/ml.jpg" alt="Machine Learning Course">
-                    <div class="course-content">
-                        <h3>3-Month Machine Learning Mastery</h3>
-                        <p>From Python basics to real-world ML projects. Master the skills that are transforming industries worldwide.</p>
-                        <a href="ml-course/ml.html" class="btn">Course Details</a>
+                    <div class="course-card-inner">
+                        <div class="course-image">
+                            <img src="images/ml.jpg" alt="Machine Learning Course">
+                            <div class="course-duration">3 Months</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Machine Learning Mastery</h3>
+                            <p class="course-description">From Python basics to real-world ML projects. Master the skills that are transforming industries worldwide.</p>
+                            <div class="course-meta">
+                                <span class="course-level"><i class="fas fa-chart-line"></i> Intermediate</span>
+                                <span class="course-students"><i class="fas fa-users"></i> 120+ students</span>
+                            </div>
+                            <a href="ml-course/ml.html" class="btn btn-outline">
+                                <span>View Details</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Course 2 -->
                 <div class="course-card">
-                    <img src="images/fontend.jpg" alt="Frontend Development Course">
-                    <div class="course-content">
-                        <h3>6-Month Frontend Web Development</h3>
-                        <p>Learn HTML, CSS, JavaScript through hands-on projects. Build beautiful, responsive websites from scratch.</p>
-                        <a href="frontend-course/frontend.html" class="btn">Course Details</a>
+                    <div class="course-card-inner">
+                        <div class="course-image">
+                            <img src="images/fontend.jpg" alt="Frontend Development Course">
+                            <div class="course-duration">6 Months</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Frontend Web Development</h3>
+                            <p class="course-description">Learn HTML, CSS, JavaScript through hands-on projects. Build beautiful, responsive websites from scratch.</p>
+                            <div class="course-meta">
+                                <span class="course-level"><i class="fas fa-chart-line"></i> Beginner</span>
+                                <span class="course-students"><i class="fas fa-users"></i> 200+ students</span>
+                            </div>
+                            <a href="frontend-course/frontend.html" class="btn btn-outline">
+                                <span>View Details</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Resources Section with improved layout -->
+    <section class="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles & Resources</h2>
+                <p class="section-subtitle">Stay updated with the latest trends and best practices</p>
+            </div>
+            
+            <div class="resource-grid">
+                <!-- Resource 1 -->
+                <article class="resource-card">
+                    <div class="resource-image">
+                        <img src="images/Web-Development-Trends-for-.png" alt="Web Development Trends">
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-category">Web Development</div>
+                        <h3 class="resource-title">Top Web Development Trends in 2025</h3>
+                        <p class="resource-excerpt">Explore the latest technologies shaping the future of web development and how to stay ahead in the industry.</p>
+                        <div class="resource-footer">
+                            <a href="#" class="resource-link">
+                                <span>Read Article</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                            <span class="resource-date">June 15, 2023</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Resource 2 -->
+                <article class="resource-card">
+                    <div class="resource-image">
+                        <img src="images/UI+vs+UX+Design+Cover+Image.jpg" alt="UI/UX Design">
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-category">UI/UX Design</div>
+                        <h3 class="resource-title">Essential UI/UX Principles for Beginners</h3>
+                        <p class="resource-excerpt">Learn the fundamental principles that every designer should know to create intuitive and beautiful interfaces.</p>
+                        <div class="resource-footer">
+                            <a href="#" class="resource-link">
+                                <span>Read Article</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                            <span class="resource-date">May 28, 2025</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Resource 3 -->
+                <article class="resource-card">
+                    <div class="resource-image">
+                        <img src="images/js.jpeg" alt="JavaScript Tips">
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-category">JavaScript</div>
+                        <h3 class="resource-title">JavaScript Best Practices You Should Follow</h3>
+                        <p class="resource-excerpt">Discover the coding practices that will make your JavaScript more efficient, readable, and maintainable.</p>
+                        <div class="resource-footer">
+                            <a href="#" class="resource-link">
+                                <span>Read Article</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                            <span class="resource-date">April 10, 2025</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Resource 4 -->
+                <article class="resource-card">
+                    <div class="resource-image">
+                        <img src="images/career.jpeg" alt="Career Growth">
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-category">Career</div>
+                        <h3 class="resource-title">Building a Successful Tech Career</h3>
+                        <p class="resource-excerpt">Strategies for continuous learning, networking, and career advancement in the fast-paced tech industry.</p>
+                        <div class="resource-footer">
+                            <a href="#" class="resource-link">
+                                <span>Read Article</span>
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                            <span class="resource-date">March 22, 2023</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with improved layout -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
             <div class="about-content">
-                <div class="profile-img">
-                    <img src="images/me.JPG" alt="Junayed Bin Karim">
+                <div class="about-image">
+                    <img src="images/me.JPG" alt="Junayed Bin Karim" class="profile-img">
+                    <div class="about-social">
+                        <a href="https://www.facebook.com/junayedbinkarim0.0" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/junayed-bin-karim/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:junayedbinkarim@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="profile-info">
-                    <h3>Junayed Bin Karim</h3>
-                    <p class="qualification">BSc in Computer Science & Engineering at Daffodil International University</p>
-                    <p>I'm passionate about teaching AI, Machine Learning, and Web Development. With years of experience in both industry and academia, I've designed these courses to give you practical, job-ready skills.</p>
-                    <p>I've completed multiple ML and Frontend projects for real clients, and now I want to share my knowledge with you through these comprehensive courses.</p>
-                    <div class="contact-links">
-                        <a href="mailto:junayedbinkarim@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email Me</a>
-                        <a href="https://wa.me/8801893255503" class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                
+                <div class="about-info">
+                    <div class="section-header">
+                        <h2 class="section-title">About Me</h2>
+                        <p class="section-subtitle">Passionate educator and industry professional</p>
+                    </div>
+                    
+                    <div class="about-text">
+                        <h3 class="about-name">Junayed Bin Karim</h3>
+                        <p class="about-qualification">
+                            <i class="fas fa-graduation-cap"></i> BSc in Computer Science & Engineering at Daffodil International University
+                        </p>
+                        
+                        <p>I'm passionate about teaching AI, Machine Learning, and Web Development. With years of experience in both industry and academia, I've designed these courses to give you practical, job-ready skills.</p>
+                        
+                        <p>I've completed multiple ML and Frontend projects for real clients, and now I want to share my knowledge with you through these comprehensive courses.</p>
+                        
+                        <div class="about-cta">
+                            <a href="https://wa.me/8801893255503" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>Chat on WhatsApp</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with improved form -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact</h2>
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? Reach out and I'll get back to you soon</p>
+            </div>
+            
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p><i class="fas fa-envelope"></i> junayedbinkarim@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> 01893255503</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Daffodil International University, Dhaka, Bangladesh</p>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:junayedbinkarim@gmail.com">junayedbinkarim@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+8801893255503">+880 1893 255503</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Daffodil International University, Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm" class="form">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
+                        
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
+                        
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Footer with improved layout -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Junayed Academy</h3>
-                    <p>Learn from an expert and transform your career.</p>
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <img src="images/logo.png" alt="Junayed Academy Logo" class="logo-img">
+                    </a>
+                    <p class="footer-description">Learn from an expert and transform your career in AI, ML, and Web Development.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/junayedbinkarim0.0" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/junayed-bin-karim/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
+                
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4 class="footer-title">Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Connect</h4>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/junayedbinkarim0.0"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/junayed-bin-karim/"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Courses</h4>
+                    <ul>
+                        <li><a href="ml-course/ml.html">Machine Learning</a></li>
+                        <li><a href="frontend-course/frontend.html">Frontend Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p>Subscribe to get updates on new courses and resources.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Junayed Academy. All rights reserved.</p>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Junayed Academy. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <script src="js/script.js"></script>
 </body>
