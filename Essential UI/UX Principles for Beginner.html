@@ -49,7 +49,7 @@
 
         .subtitle {
             font-size: 1.25rem;
-            opacity: 0.9;
+            opacity: 1;
             margin-bottom: 10px;
             max-width: 700px;
             margin-left: auto;
@@ -133,7 +133,7 @@
         p {
             margin-bottom: 25px;
             font-size: 1.1rem;
-            color: #4b5563;
+            color: #0a55bd;
         }
 
         .principle {
@@ -165,7 +165,7 @@
 
         li {
             margin-bottom: 15px;
-            color: #4b5563;
+            color: #1368df;
             padding-left: 10px;
         }
 
@@ -287,6 +287,96 @@
                 font-size: 1.3rem;
             }
         }
+
+
+
+
+
+    
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+            color: #fff;
+            padding: 60px 20px;
+        }
+
+        header .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: #d0d4ff;
+            margin-bottom: 30px;
+            max-width: 700px;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-img {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            color: #4361ee;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1rem;
+        }
+
+        .author-info .author-name {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .author-info .publish-date {
+            font-size: 0.85rem;
+            color: #d0d4ff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header .subtitle {
+                font-size: 1rem;
+            }
+
+            .author {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -321,7 +411,7 @@
             
             <div class="principle">
                 <div class="principle-title">
-                    <span class="icon">🎨</span> User Interface (UI)
+                    <span class="icon"></span> User Interface (UI)
                 </div>
                 <p>UI refers to the visual elements and interactive components of a product. It's what users see and interact with directly:</p>
                 <ul>
@@ -334,7 +424,7 @@
             
             <div class="principle">
                 <div class="principle-title">
-                    <span class="icon">🧠</span> User Experience (UX)
+                    <span class="icon"></span> User Experience (UX)
                 </div>
                 <p>UX encompasses the entire user journey and how a person feels when interacting with a product:</p>
                 <ul>
@@ -400,7 +490,7 @@
             <p>Effective color usage enhances usability and aesthetics:</p>
             <div class="principle">
                 <div class="principle-title">
-                    <span class="icon">🎨</span> Color Best Practices
+                    <span class="icon"></span> Color Best Practices
                 </div>
                 <ul>
                     <li>Limit your palette to 2-3 primary colors</li>
@@ -440,7 +530,7 @@
             <p>This fundamental law states that:</p>
             <div class="principle">
                 <div class="principle-title">
-                    <span class="icon">📏</span> Fitts's Law Application
+                    <span class="icon"></span> Fitts's Law Application
                 </div>
                 <p>The time to acquire a target is a function of the distance to and size of the target. In practice:</p>
                 <ul>
@@ -473,7 +563,7 @@
             <p>Also known as the isolation effect, this principle states that when multiple similar objects are present, the one that differs is most likely to be remembered:</p>
             <div class="principle">
                 <div class="principle-title">
-                    <span class="icon">✨</span> Design Applications
+                    <span class="icon"></span> Design Applications
                 </div>
                 <ul>
                     <li>Make important actions visually distinct</li>
