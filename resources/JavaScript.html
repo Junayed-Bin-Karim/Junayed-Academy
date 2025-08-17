@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Best Practices You Should Follow | Junayed Bin Karim</title>
+    <title>Building a Successful Tech Career | Junayed Bin Karim</title>
     <style>
-        /* Global Styles */
+        /* Base Styles */
         :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --text-color: #333;
-            --light-gray: #f4f4f4;
-            --white: #fff;
-            --border-radius: 5px;
-            --box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --accent: #f59e0b;
+            --success: #10b981;
         }
         
         * {
@@ -23,135 +23,95 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--white);
-            max-width: 900px;
+            color: var(--dark);
+            background: var(--light);
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
         
         /* Typography */
         h1, h2, h3 {
-            color: var(--secondary-color);
-            margin: 20px 0 15px;
+            color: var(--secondary);
+            margin: 1.5rem 0 1rem;
+            font-weight: 600;
         }
         
         h1 {
             font-size: 2.2rem;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.5rem;
         }
         
         h2 {
             font-size: 1.8rem;
-            padding-top: 15px;
+            padding-top: 1rem;
         }
         
         h3 {
             font-size: 1.4rem;
+            color: var(--primary);
         }
         
         p {
-            margin-bottom: 15px;
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
         }
         
-        /* Code Blocks */
-        pre {
-            background: var(--light-gray);
-            padding: 15px;
-            border-radius: var(--border-radius);
-            overflow-x: auto;
-            margin: 15px 0;
-            box-shadow: var(--box-shadow);
-        }
-        
-        code {
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-        }
-        
-        /* Links */
         a {
-            color: var(--primary-color);
+            color: var(--primary);
             text-decoration: none;
-            transition: color 0.3s;
+            font-weight: 500;
         }
         
         a:hover {
-            color: var(--secondary-color);
             text-decoration: underline;
         }
         
         /* Author Section */
         .author {
             font-style: italic;
-            margin: 20px 0;
-            padding: 10px;
-            border-left: 3px solid var(--primary-color);
-            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--gray);
+            margin: 1rem 0 2rem;
+            display: block;
         }
         
-        /* Table of Contents */
-        .toc {
-            background: var(--light-gray);
-            padding: 15px;
-            border-radius: var(--border-radius);
-            margin: 20px 0;
+        /* Content Sections */
+        section {
+            margin-bottom: 2.5rem;
         }
         
-        .toc ul {
-            list-style-position: inside;
-        }
-        
-        .toc li {
-            margin: 8px 0;
-        }
-        
-        /* Best Practice Tips */
+        /* Tips & Highlights */
         .tip {
-            background: #e8f4fc;
-            border-left: 4px solid var(--primary-color);
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            background: #eff6ff;
+            border-left: 4px solid var(--primary);
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
         }
         
         .tip-title {
-            font-weight: bold;
-            color: var(--secondary-color);
-            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
         }
         
-        /* Key Takeaways */
-        .takeaways {
-            background: #e8f8f0;
-            border-left: 4px solid #2ecc71;
-            padding: 20px;
-            margin: 25px 0;
-            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        .tip-title:before {
+            content: "";
+            margin-right: 0.5rem;
         }
         
-        .takeaways h3 {
-            color: #27ae60;
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
         }
         
-        .takeaways ul {
-            list-style-type: none;
-        }
-        
-        .takeaways li {
-            margin: 10px 0;
-            position: relative;
-            padding-left: 25px;
-        }
-        
-        .takeaways li:before {
-            content: "✔";
-            color: #27ae60;
-            position: absolute;
-            left: 0;
+        li {
+            margin-bottom: 0.5rem;
         }
         
         /* Responsive Design */
@@ -168,9 +128,8 @@
                 font-size: 1.5rem;
             }
             
-            pre {
-                padding: 10px;
-                font-size: 0.85rem;
+            p {
+                font-size: 1rem;
             }
         }
         
@@ -180,7 +139,7 @@
             }
             
             h1 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
         }
     </style>
