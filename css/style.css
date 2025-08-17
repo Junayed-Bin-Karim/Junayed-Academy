@@ -298,7 +298,7 @@ button {
 /* Hero Section */
 .hero {
     padding: 4rem 0; /* Scroll কমানোর জন্য উপরে ও নীচের padding কমালাম */
-    background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+    background: linear-gradient(135deg, #10c9e6 0%, #c749be 100%);
     color: var(--white);
     overflow: hidden;
     min-height: 100vh; /* পুরো viewport এ ফিট করার জন্য */
