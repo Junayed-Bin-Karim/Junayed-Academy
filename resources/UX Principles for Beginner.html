@@ -290,6 +290,106 @@
 
 
 
+/* 📌 Laptop view (Medium devices: 992px - 1366px) */
+@media (min-width: 992px) and (max-width: 1366px) {
+    .container {
+        max-width: 950px;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 2.6rem;
+    }
+
+    header .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .article-content {
+        padding: 50px;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p, li {
+        font-size: 1.05rem;
+    }
+}
+
+/* 📌 Mobile view (Small devices: up to 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    header {
+        padding: 40px 15px;
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+    }
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    header .subtitle {
+        font-size: 1rem;
+    }
+
+    .author {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .author-img {
+        width: 45px;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+
+    .article-content {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 30px 0 15px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p, li {
+        font-size: 0.95rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .visual-hierarchy {
+        max-width: 100%;
+        padding: 0.5rem;
+    }
+
+    .conclusion {
+        padding: 25px;
+    }
+
+    footer {
+        padding: 30px 10px;
+        font-size: 0.85rem;
+    }
+}
 
 
     
