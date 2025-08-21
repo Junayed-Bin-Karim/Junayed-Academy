@@ -393,7 +393,7 @@ button {
 .hero {
     position: relative;
     padding: 10rem 0 6rem;
-    min-height: 100vh;
+    min-height: 80vh; /* 100vh থেকে 80vh এ কমানো হলো */
     display: flex;
     align-items: center;
     overflow: hidden;
