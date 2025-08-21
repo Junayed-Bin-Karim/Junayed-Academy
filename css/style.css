@@ -392,8 +392,8 @@ button {
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 10rem 0 6rem;
-    min-height: 80vh; /* 100vh থেকে 80vh এ কমানো হলো */
+    padding: 5rem 0 3rem; /* padding আরও কমানো হলো */
+    min-height: 100vh; /* 100vh থেকে 85vh বা প্রয়োজনমতো কমানো */
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -453,7 +453,7 @@ button {
 }
 
 .hero-img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-xl);
